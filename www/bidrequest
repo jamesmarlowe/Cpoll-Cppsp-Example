@@ -1,0 +1,9 @@
+<%!-Iutil%>
+<%#
+#include <string>
+#include <ctime>
+#include "log.h"
+%><%
+response->statusCode = 204;
+log("Request", std::time(nullptr));
+%>
