@@ -1,10 +1,11 @@
+<%!-L/usr/lib/x86_64-linux-gnu -L/usr/include -lhiredis%>
 <%#
 DelegateChain<void(Request&, Response&, Delegate<void()>)>::item* it;
 Server* server;
 void handleRequest(void*, Request& req, Response& resp, Delegate<void()> cb) {
-    # http://xa.us.to/cppsp/doxygen_cppsp_1.0/html/classcppsp_1_1_server.html#a5dda1efb53291440b5ad5fcf7fd23d08
-    # path relative to server root ie www
-	server->handleDynamicRequest(req.path,req,resp,cb);
+    // http://xa.us.to/cppsp/doxygen_cppsp_1.0/html/classcppsp_1_1_server.html#a5dda1efb53291440b5ad5fcf7fd23d08
+    // path relative to server root ie www
+	server->handleDynamicRequest("bidrequest",req,resp,cb);
 }
 extern "C" void initModule(Server* s) {
 	server=s;

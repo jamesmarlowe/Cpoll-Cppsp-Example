@@ -1,4 +1,4 @@
-<%!-Iutil%>
+<%!-L/usr/lib/x86_64-linux-gnu%><%!-I/usr/include%><%!-L/home/ubuntu/Cpoll-Cppsp-Example/util%><%!-I/home/ubuntu/Cpoll-Cppsp-Example/util%><%!-llog%><%!-lhiredis%>
 <%#
 #include <string>
 #include <ctime>
